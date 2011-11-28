@@ -1,3 +1,6 @@
+// JSON array to improve performance for figures
+var figures = []
+
 function getResources() {
         $.getJSON('example/resources.json', function(data){
                         // Output the jobMetaData
@@ -9,11 +12,13 @@ function getResources() {
                         $("#info").append('<strong>Version:</strong> ' + data.jobMetaData.Version + '</br>');
                         $("#info").append('<strong>Tune:</strong> ' + data.jobMetaData.Tune + '</br>');
                         $("#info").append('<strong>Events:</strong> ' + data.jobMetaData.Events + '</br>');
+
                         // Retrieve histograms and append them to the figures
-                        // div to create the gallery
+                        // array
                         $.each(data.sprites.histograms, function(index, histogram){
-                                $("<img/>").attr("src","example" + histogram).appendTo("#figures");
+                                figures.push({'image': "example" + histogram});
                                 });
+                        return figures;
                         });
 }
 
@@ -21,11 +26,15 @@ function createGallery() {
         // Activate the Galleria plugin
         Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
         $("#figures").galleria({
-                        widht: 480,
-                        height: 480,
+                        width: 520,
+                        height: 440,
+                        dataSource: figures,
+                        preload: "all",
+                        queue: false,
                         imagePosition: "center",
                         lightbox: true,
-                        thumbnails: false
+                        thumbnails: "numbers",
+                        showCounter: false,
                         });
         // Grab the Gallery instance:
         var gallery = Galleria.get(0);
@@ -36,6 +45,7 @@ function createGallery() {
                         up: gallery.openLightbox,
                         down: gallery.closeLightbox
                         });   
+        $(".galleria-thumbnails-container").hide();
 }
 
 getResources();

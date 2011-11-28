@@ -25,9 +25,9 @@ body {
 }
 
 #figures {
-        width:500px; 
+        width:530px; 
         margin:30px auto; 
-        height:480px;
+        height:450px;
         background:#fff;
         padding:12px;
         -moz-box-shadow:    0 1px 3px rgba(0,0,0,.2);
@@ -38,4 +38,9 @@ body {
 #shortcuts {
         font-size: 10px;
         text-align: center;
+}
+
+.galleria-image {
+        opacity: 0.8;
+        color: white;
 }
