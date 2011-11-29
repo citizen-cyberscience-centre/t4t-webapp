@@ -43,9 +43,7 @@ function createGallery() {
                         left: gallery.prev,
                         right: gallery.next,
                         up: gallery.openLightbox,
-                        down: gallery.closeLightbox
                         });   
-        $(".galleria-thumbnails-container").hide();
 }
 
 getResources();
