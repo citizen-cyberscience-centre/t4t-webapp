@@ -2,7 +2,7 @@
 var figures = []
 
 function getResources() {
-        $.getJSON('example/resources.json', function(data){
+        $.getJSON('job/resources.json', function(data){
                         // Output the jobMetaData
                         $("#info").append('<strong>Beam:</strong> ' + data.jobMetaData.Beam + '</br>');
                         $("#info").append('<strong>Process:</strong> ' + data.jobMetaData.Process + '</br>');
@@ -16,7 +16,7 @@ function getResources() {
                         // Retrieve histograms and append them to the figures
                         // array
                         $.each(data.sprites.histograms, function(index, histogram){
-                                figures.push({'image': "example" + histogram});
+                                figures.push({'image': "job" + histogram});
                                 });
                         return figures;
                         });

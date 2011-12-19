@@ -1,0 +1,48 @@
+{
+  "sprites" :
+  {
+    "histograms": [
+"/ALEPH_2004_S5765862_d231-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d184-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d39-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d82-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d05-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d98-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d30-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d122-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d153-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d223-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d66-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d199-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d177-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d114-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d161-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d22-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d74-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d58-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d129-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d207-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d106-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d191-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d137-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d215-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d90-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d14-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d47-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d169-x01-y01.dat.png",
+"/ALEPH_2004_S5765862_d145-x01-y01.dat.png"
+    ]
+  },
+  
+  "jobMetaData":
+  {
+    "Beam" : "ee",
+    "Process" : "zhad",
+    "Energy" : "183 GeV",
+    "Cuts" : "-",
+    "Generator" : "vincia",
+    "Version" : "1.0.25_8.150",
+    "Tune" : "jeppsson3",
+    "Events": "24000"
+  }
+}

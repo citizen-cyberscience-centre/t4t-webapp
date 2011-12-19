@@ -1,0 +1,55 @@
+
+{
+  "settings"  :
+  {
+    "refresh" : 5
+  },
+
+  "resources" :
+  {
+    "resources" : "/resources.json"
+  },
+
+  "sprites" :
+  {
+    "external" : true,
+    "resource" : "resources",
+    "node"     : "sprites"
+  },
+
+  "objects" :
+  [
+     [ 
+      {
+        "type"       : "gridshow",
+        "dimensions" : { "x": -0.4, "y": -0.3, "h": 0.4, "cellsWide" : 3 },
+        "sprites"    : "histograms",
+        "timeout"    : 100,
+        "numCells"   : 6
+      },
+      {
+        "type"       : "boincValue",
+        "valueType"  : "username",
+        "dimensions" : {"x": -0.49,"y": -0.4},
+        "prefix"     : "User: "
+      },
+      {
+        "type"       : "boincValue",
+        "valueType"  : "credit",
+        "dimensions" : {"x": -0.49, "y": -0.481},
+        "prefix"     : "Credit: "
+      },
+      {
+        "type"       : "strings",
+        "dimensions" : {"x": 0.0, "y": -0.37},
+        "external"   : true,
+        "resource"   : "resources",
+        "node"       : "jobMetaData",
+        "maxLines"   : 4,
+        "lineWidth"  : 23,
+        "delimiter"  : ": "
+      }
+    ]
+  ]
+}
+
