@@ -1,6 +1,16 @@
 // JSON array to improve performance for figures
 var figures = []
 
+function getBoincData() {
+        $.getJSON('job/boinc.json', function(data){
+                        // Output the jobMetaData
+                        $("#boinc").show();
+                        $("#boinc").append('<strong>User:</strong> ' + data.boinc.BOINC_USERNAME + '</br>');
+                        $("#boinc").append('<strong>User Total Credit:</strong> ' + data.boinc.BOINC_USER_TOTAL_CREDIT + '</br>');
+                        $("#boinc").append('<strong>Host Total Credit:</strong> ' + data.boinc.BOINC_HOST_TOTAL_CREDIT + '</br>');
+                        });
+}
+
 function getResources() {
         $.getJSON('job/resources.json', function(data){
                         // Output the jobMetaData
@@ -46,5 +56,6 @@ function createGallery() {
                         });   
 }
 
+getBoincData();
 getResources();
 createGallery();

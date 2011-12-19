@@ -1,0 +1,7 @@
+{
+        "boinc": {
+                "BOINC_USERNAME": "John Doe",
+                "BOINC_USER_TOTAL_CREDIT": 0,
+                "BOINC_HOST_TOTAL_CREDIT": 0
+        }
+}
