@@ -8,3 +8,7 @@ Please, check the following link to see a running [example](http://www.citizency
 ## Requirements
 
 This prototype needs the Galleria library to work. 
+
+## License
+
+GNU Affero v3. Please, check the COPYING file.
