@@ -29,6 +29,11 @@
                         <b>&darr;</b> zoom out
                         </div>
                 </div>
-                <script type="text/javascript" src="js/test4theory.js"></script>
+                <script type="text/javascript" src="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/master/js/test4theory.js"></script>
+                <script> if (typeof getBoincData == 'undefined') {
+                    console.log('Raw Github failed, falling back to local copy');
+                    document.write('<script type="text/javascript" src="js/test4theory.js"><\/script>');
+                        }
+                </script>
         </body>
 </html>
