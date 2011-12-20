@@ -31,6 +31,8 @@ function getBoincData() {
 
 function getResources() {
         $.getJSON('job/resources.json', function(data){
+                        $("#waiting").hide();
+                        $("#container").show();
                         // Output the jobMetaData
                         $("#info").append('<strong>Beam:</strong> ' + data.jobMetaData.Beam + '</br>');
                         $("#info").append('<strong>Process:</strong> ' + data.jobMetaData.Process + '</br>');
@@ -46,6 +48,7 @@ function getResources() {
                         $.each(data.sprites.histograms, function(index, histogram){
                                 figures.push({'image': "job" + histogram});
                                 });
+                        // Enable all the divs
                         return figures;
                         });
 }
