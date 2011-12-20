@@ -20,7 +20,7 @@
 var figures = []
 
 function getBoincData() {
-        $.getJSON('job/boinc.json', function(data){
+        $.getJSON('boinc.json', function(data){
                         // Output the jobMetaData
                         $("#boinc").show();
                         $("#boinc").append('<strong>User:</strong> ' + data.boinc.BOINC_USERNAME + '</br>');
