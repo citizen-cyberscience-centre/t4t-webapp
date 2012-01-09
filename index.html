@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-                <title>Test4Theory prototype</title>
+                <title>Test4Theory</title>
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
                 <!-- Galleria -->
                 <script src="js/galleria/galleria-1.2.5.min.js"></script>
+                <!-- Modernizr -->
+                <script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
 
                 <link rel="stylesheet" href="stylesheets/default.css" type="text/css" media="screen" />
+                <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
                 <!-- Google Web Fonts -->
                 <link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
         </head>
         <body>
-                <div id="header">
-                        Test4Theory prototype
+           <div class="container-fluid">
+                <div class="row">
+<a href="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+                    <div id="header" class="span16">
+                        Test4Theory simulations
+                    </div>
                 </div>
-                <div id="waiting">
-                        <h1>Waiting for some nice figures to show you.</h1>
-                        <h2>Please, reload again in a few minutes</h2>
-                </div>
-                <div id="container">
-                        <div id="info"></div>
-                        <div id="boinc"></div>
-                        <div id="logs">
-                                <a href=logs/>LOGs</a> <br>
+                <div id="noscript" class="row">
+                    <div id="noscript" class="span16">
+                        <h1>WARNING: Test4Theory web application makes heavy use of JavaScript</h1>
+                        <p>This site uses JavaScript to show the results and your BOINC credit using technologies like JavaScript, JSON and HTML5.</p>
+                        <p>If you cannot enable JavaScript in your browser's settings, you will be missing a nice user interface to the results:</p>
+                        <ul>
+                            <li>an interactive gallery with all the figures from the simulations of your computer:
+                            <ul>
+                                <li>zoom in and out with a friendly interface,</li>
+                                <li>browse the figures (next,previous and index) using shortcuts and without going back and forward to see other image,</li>
+                                <li>swipe movement for flicking through images on touch devices,</li>
+                                <li>etc.</li>
+                            </ul></li>
+                            <li>and some BOINC statistics.</li>
+                        </ul>
+                        <p>Here you have an screenshot of the web page with a free modern and open source web browser like <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/">Google Chrome</a>:</p>
+                        <div id="example-img">
+                            <img src="img/example.png"/>
                         </div>
+                        <p>You can access the raw figures and BOINC stats data in this <a href="job/">folder</a> and the LOGs of the virtual machine in this <a href="logs/">other one</a>.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="waiting" class="span16">
+                            <h1>Waiting for some nice figures to show you.</h1>
+                            <h2>Please, reload again in a few minutes</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="with-js" class="container-fluid">
+                <div class="sidebar">
+                    <div id="info"></div><br/>
+                    <div id="boinc"></div><br>
+                    <div id="logs"><a href=logs/>LOGs</a> <br></div>
+                </div>
+                <div class="content">
+                    <div id="centered">
                         <div id="figures"></div>
+                    </div>
                         <div id="shortcuts">
-                        <b>Keyboard shortcuts:</b> &nbsp;
-                        <b>&larr;</b> previous image &nbsp; 
-                        <b>&rarr;</b> next image &nbsp; 
-                        <b>&uarr;</b> zoom in &nbsp; 
-                        <b>&darr;</b> zoom out
+                            <b>Keyboard shortcuts:</b> &nbsp;
+                            <b>&larr;</b> previous image &nbsp; 
+                            <b>&rarr;</b> next image &nbsp; 
+                            <b>&uarr;</b> zoom in &nbsp; 
+                            <b>&darr;</b> zoom out
                         </div>
                 </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="github" class="span16">
+                            <p>Please, if you find a bug or you think that this application can be improved add an "issue" in the <a href="https://github.com/citizen-cyberscience-centre/t4t-webapp/issues">project repository</a>.</p>
+                    </div>
+                </div>
+            </div>
+
                 <script type="text/javascript" src="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/master/js/test4theory.js"></script>
                 <script> if (typeof getBoincData == 'undefined') {
                     console.log('Raw Github failed, falling back to local copy');

@@ -2,25 +2,63 @@ body {
     background-image: url(../img/bg.png);
 }
 
-#header{
+p {
+    color: black;
+}
+
+ul li {
+    color: black;
+}
+
+#header, #github{
     font-family: 'Iceland', cursive;
-    font-size: 36px;
+    font-size: 44px;
     text-align: center;
+    padding: 20px;
+}
+
+#github {
+    font-size: 10px;
+}
+
+#noscript {
+    padding-left: 10px;
+}
+
+#noscript h1{
+    color: red;
+    font-size: 24px;
+}
+
+#example-img {
+    text-align: center;
+}
+
+#example-img img {
+    width: 50%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 #waiting {
     font-family: 'Iceland', cursive;
     text-align: center;
+    display: none;
 }
 
-#container {
+#with-js, #github {
     display: none;
 }
 
 #info, #logs, #boinc {
     font-family: 'Iceland', cursive;
     font-size: 16px;
-    float:left;
     background:#fff;
     padding:12px;
     width: 160px;
@@ -31,19 +69,16 @@ body {
 
 #boinc {
     display: none;
-    position: absolute;
-    top: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #logs {
-    position: absolute;
-    top: 370px;
     text-align: center;
 }
 
 #figures {
     width:530px; 
-    margin:30px auto; 
     height:450px;
     background:#fff;
     padding:12px;
@@ -53,6 +88,7 @@ body {
 }
 
 #shortcuts {
+    width: 530px;
     font-size: 10px;
     text-align: center;
 }

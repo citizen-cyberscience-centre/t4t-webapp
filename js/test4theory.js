@@ -34,7 +34,10 @@ function getResources() {
                         // Check if there are some images to show, otherwise, keep the waiting message
                         if (data.sprites.histograms.length != 0) {
                                 $("#waiting").hide();
-                                $("#container").show();
+                                // Show the container and left sidebar
+                                $("#with-js").show();
+                                // Show the github footer
+                                $("#github").show();
                                 // Output the jobMetaData
                                 $("#info").append('<strong>Beam:</strong> ' + data.jobMetaData.Beam + '</br>');
                                 $("#info").append('<strong>Process:</strong> ' + data.jobMetaData.Process + '</br>');
@@ -80,6 +83,13 @@ function createGallery() {
                         });   
 }
 
-getBoincData();
-getResources();
-createGallery();
+// Show the waiting div when JS is enabled
+if (Modernizr.video.webm) {
+        $("#noscript").hide();
+        $("#waiting").show();
+        getBoincData();
+        getResources();
+        createGallery();
+}
+
+
