@@ -10,6 +10,17 @@ ul li {
     color: black;
 }
 
+#footer {
+    padding-top: 15px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.03);
+    height: 100%;
+}
+
+footer {
+    border-top: none;
+}
+
 #header, #github{
     font-family: 'Iceland', cursive;
     font-size: 44px;
@@ -69,6 +80,7 @@ ul li {
 
 #boinc {
     display: none;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }

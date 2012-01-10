@@ -8,8 +8,8 @@
                 <!-- Modernizr -->
                 <script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
 
-                <link rel="stylesheet" href="stylesheets/default.css" type="text/css" media="screen" />
-                <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+                <link rel="stylesheet" href="css/bootstrap.min.css">
+                <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
                 <!-- Google Web Fonts -->
                 <link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
         </head>
@@ -36,17 +36,18 @@
                             </ul></li>
                             <li>and some BOINC statistics.</li>
                         </ul>
-                        <p>Here you have an screenshot of the web page with a free modern and open source web browser like <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/">Google Chrome</a>:</p>
+                        <p>Here you have an screenshot of the web page with a <strong>free, modern and open source</strong> web browser like <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/">Google Chrome</a>:</p>
                         <div id="example-img">
                             <img src="img/example.png"/>
                         </div>
-                        <p>You can access the raw figures and BOINC stats data in this <a href="job/">folder</a> and the LOGs of the virtual machine in this <a href="logs/">other one</a>.</p>
+                        <p>You can access the <a href="job/">raw figures and BOINC stats data</a> and the <a href="logs/">LOGs folder</a></p> 
                     </div>
                 </div>
                 <div class="row">
                     <div id="waiting" class="span16">
                             <h1>Waiting for some nice figures to show you.</h1>
                             <h2>Please, reload again in a few minutes</h2>
+                            <h2>Meanwhile you can check the <a href="logs/">logs</a></h2>
                     </div>
                 </div>
             </div>
@@ -76,7 +77,22 @@
                     </div>
                 </div>
             </div>
-
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="span16">
+                        <footer>
+                        <a href="http://www.w3.org/html/logo/">
+                        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="155" height="51" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a>
+                        <a href="http://www.gnu.org/licenses/agpl.html"><img src="http://www.gnu.org/graphics/agplv3-155x51.png" alt="AGPL v3" title="License GNU Affero V3">
+                        </a>
+                        <p>&copy; <a href="http://cern.ch/cern-copyright">European Organization for Nuclear Research</a>, <abbr title="European Organization for Nuclear Research">CERN</abbr>, <time>2012</time></p> 
+                        <p>With the support of the <a href="http://www.citizencyberscience.net/">Citizen Cyberscience Centre</a> and the <a href="http://lpcc.web.cern.ch/LPCC/">LHC Physics Centre</a> at <abbr title="European Organization for Nuclear Research">CERN</abbr></p>
+                        </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <script type="text/javascript" src="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/master/js/test4theory.js"></script>
                 <script> if (typeof getBoincData == 'undefined') {
                     console.log('Raw Github failed, falling back to local copy');
