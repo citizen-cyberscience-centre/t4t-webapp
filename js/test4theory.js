@@ -84,7 +84,7 @@ function createGallery() {
 }
 
 // Show the waiting div when JS is enabled
-if (Modernizr.video.webm) {
+if (Modernizr.svg) {
         $("#noscript").hide();
         $("#waiting").show();
         getBoincData();
