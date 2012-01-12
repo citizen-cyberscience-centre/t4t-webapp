@@ -15,9 +15,96 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with t4t-webapp.  If not, see <http://www.gnu.org/licenses/>.
 
-
 // JSON array to improve performance for figures
-var figures = []
+var figures = [];
+var pop = Popcorn("#video");
+
+function addPopOvers() {
+        $("#info").popover({
+                html: true,
+                trigger: "manual"
+                });
+
+        $("#boinc").popover({
+                html: true,
+                trigger: "manual"
+                });
+
+        $("#logs").popover({
+                html: true,
+                trigger: "manual"
+                });
+
+        $("#figures").popover({
+                html: true,
+                trigger: "manual",
+                placement: "left",
+                offset: -90
+                });
+}
+
+function startTutorial() {
+        $("#tutorial").click(function() {
+                        $("#tutorial").slideUp();
+                        $("#boinc").popover("hide");
+                        pop.pause();
+                        });
+        
+        addPopOvers();
+
+        $("#tutorial").show();
+
+        // First Simulations info div
+        pop.code({
+            start: 1,
+            end: 2,
+            onStart: function( options ){
+                $("#info").popover('show');
+            },
+            onEnd: function (options) {
+                $("#info").popover('hide');
+            }
+                        });
+
+        // Second BOINC div
+        pop.code({
+            start: 2,
+            end: 3,
+            onStart: function( options ){
+                $("#boinc").popover('show');
+            },
+            onEnd: function (options) {
+                $("#boinc").popover('hide');
+            }
+                        });
+
+        // Third LOGs div
+        pop.code({
+            start: 3,
+            end: 4,
+            onStart: function( options ){
+                $("#logs").popover('show');
+            },
+            onEnd: function (options) {
+                $("#logs").popover('hide');
+            }
+                        });
+
+        // Fourth Figures div
+        pop.code({
+            start: 4,
+            end: 5,
+            onStart: function( options ){
+                $("#figures").popover('show');
+            },
+            onEnd: function (options) {
+                $("#figures").popover('hide');
+            }
+                        });
+
+        pop.play();
+
+}
 
 function getBoincData() {
         $.getJSON('boinc.json', function(data){
@@ -26,7 +113,8 @@ function getBoincData() {
                         $("#boinc").append('<strong>User:</strong> ' + data.boinc.BOINC_USERNAME + '</br>');
                         $("#boinc").append('<strong>User Total Credit:</strong> ' + data.boinc.BOINC_USER_TOTAL_CREDIT + '</br>');
                         $("#boinc").append('<strong>Host Total Credit:</strong> ' + data.boinc.BOINC_HOST_TOTAL_CREDIT + '</br>');
-                        });
+
+        });
 }
 
 function getResources() {
