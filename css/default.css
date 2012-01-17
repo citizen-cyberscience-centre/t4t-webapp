@@ -121,23 +121,21 @@ footer {
 
 #video-container {
     position: absolute;
-    top: 10%;
-    left: 70%;
-    width: 300px;
-    height: 180px;
-    padding: 30px;
     background-color: black;
-    -moz-opacity: 0.1;
-    opacity:.10;
-    filter: alpha(opacity=10); 
-}
-
-#white {
-    position: absolute;
     top: 15%;
-    left: 72%;
+    left: 65%;
     z-index:1002;
     overflow: auto;
+    width: 360px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+}
+
+#video {
+    max-width: 100%;
+    height: auto;
 }
 
 .galleria-image {
