@@ -65,6 +65,7 @@ function startTutorial() {
         $("#tutorial").click(function() {
                         $("#left-sidebar").animate({opacity:1},100);
                         $("#main-content").animate({opacity:1},100);
+                        $("#help-button").show();
 
                         $("#tutorial").slideUp();
                         $("#info").popover("hide");
