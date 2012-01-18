@@ -65,6 +65,9 @@ function startTutorial() {
         $("#tutorial").click(function() {
                         $("#left-sidebar").animate({opacity:1},100);
                         $("#main-content").animate({opacity:1},100);
+                        $("#info").animate({opacity:1},100);
+                        $("#boinc").animate({opacity:1},100);
+                        $("#logs").animate({opacity:1},100);
                         $("#help-button").show();
 
                         $("#tutorial").slideUp();
@@ -110,7 +113,9 @@ function startTutorial() {
             start: 17,
             end: 24,
             onStart: function( options ){
+                $("#left-sidebar").animate({opacity:1},1);
                 $("#info").popover('show');
+                $("#info").animate({opacity: 1.0}, 500);
                 $("#boinc").animate({opacity: 0.3}, 500);
                 $("#logs").animate({opacity: 0.3}, 500);
             },
@@ -126,8 +131,10 @@ function startTutorial() {
             start: 27,
             end: 33,
             onStart: function( options ){
+                $("#left-sidebar").animate({opacity:1},1);
                 $("#boinc").popover('show');
                 $("#info").animate({opacity: 0.3}, 500);
+                $("#boinc").animate({opacity: 1.0}, 500);
                 $("#logs").animate({opacity: 0.3}, 500);
 
             },
@@ -144,9 +151,12 @@ function startTutorial() {
             start: 34,
             end: 42,
             onStart: function( options ){
+                $("#left-sidebar").animate({opacity:1},1);
                 $("#logs").popover('show');
                 $("#info").animate({opacity: 0.3}, 500);
                 $("#boinc").animate({opacity: 0.3}, 500);
+                $("#logs").animate({opacity: 1}, 500);
+
             },
             onEnd: function (options) {
                 $("#logs").popover('hide');
@@ -199,6 +209,7 @@ function startTutorial() {
                 $("#figures").popover({trigger: 'hover'});
                 $("#help-button").show();
          });
+
 
         loaded();
 
