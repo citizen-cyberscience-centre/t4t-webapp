@@ -41,7 +41,7 @@ function addPopOvers() {
                 });
 }
 
-function loaded() {
+var loaded = function() {
         // store the returned timeRanges object as we use it more than once
         var buff = pop.buffered();
         
@@ -215,8 +215,6 @@ function startTutorial() {
 
 
         loaded();
-
-        pop.play();
 
         $().popover({trigger: 'hover'});
 
