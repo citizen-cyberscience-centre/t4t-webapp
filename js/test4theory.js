@@ -94,6 +94,8 @@ function setWidth() {
         // Figures width and height based on viewport
         $("#figures").css('width', h + 30);
         $("#figures").css('height', h);
+        // Set the same for the shortcuts info div
+        $("#shortcuts").css('width', h + 30);
         
         // Video tutorial width and height based on figures size 
         w = (($(window).width() * 35) / 100);
