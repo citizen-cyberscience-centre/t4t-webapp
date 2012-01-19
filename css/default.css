@@ -129,6 +129,12 @@ footer {
     box-shadow: 0 0 5px 5px #888;
 }
 
+#exit {
+    -moz-box-shadow: 0 0 3px 3px #888;
+    -webkit-box-shadow: 0 0 3px 5px#888;
+    box-shadow: 0 0 3px 3px #888;
+}
+
 #video {
     max-width: 100%;
     height: auto;

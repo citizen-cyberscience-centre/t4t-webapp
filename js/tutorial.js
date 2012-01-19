@@ -57,6 +57,24 @@ function loaded() {
         }
 }
 
+function stopTutorial(){
+        $("#left-sidebar").animate({opacity:1},100);
+        $("#main-content").animate({opacity:1},100);
+        $("#info").animate({opacity:1},100);
+        $("#boinc").animate({opacity:1},100);
+        $("#logs").animate({opacity:1},100);
+        $("#help-button").show();
+        
+        $("#tutorial").slideUp();
+        $("#info").popover("hide");
+        $("#boinc").popover("hide");
+        $("#logs").popover("hide");
+        $("#figures").popover("hide");
+        
+        pop.pause();
+}
+
+
 
 
 function startTutorial() {
@@ -64,22 +82,6 @@ function startTutorial() {
         $("#main-content").animate({opacity:0},1);
         $("#help-button").hide();
 
-        $("#tutorial").click(function() {
-                        $("#left-sidebar").animate({opacity:1},100);
-                        $("#main-content").animate({opacity:1},100);
-                        $("#info").animate({opacity:1},100);
-                        $("#boinc").animate({opacity:1},100);
-                        $("#logs").animate({opacity:1},100);
-                        $("#help-button").show();
-
-                        $("#tutorial").slideUp();
-                        $("#info").popover("hide");
-                        $("#boinc").popover("hide");
-                        $("#logs").popover("hide");
-                        $("#figures").popover("hide");
-
-                        pop.pause();
-                        });
         
         addPopOvers();
 
@@ -208,7 +210,6 @@ function startTutorial() {
                 $("#info").popover({trigger: 'hover'});
                 $("#boinc").popover({trigger: 'hover'});
                 $("#logs").popover({trigger: 'hover'});
-                $("#figures").popover({trigger: 'hover'});
                 $("#help-button").show();
          });
 

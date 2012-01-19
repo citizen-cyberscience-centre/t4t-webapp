@@ -105,6 +105,10 @@ function setWidth() {
         p = $(window).width() - w + (w/3);
         $("#video-container").css('left', p);
 
+        $("#exit").css('position', 'absolute');
+        $("#exit").css('left', p);
+        p = $("#video-container").offset();
+        $("#exit").css('top', p.top + 30);
 }
         setWidth();
 
