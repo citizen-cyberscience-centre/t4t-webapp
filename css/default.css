@@ -90,8 +90,6 @@ footer {
 }
 
 #figures {
-    width:530px; 
-    height:450px;
     background:#fff;
     padding:12px;
     -moz-box-shadow:    0 1px 3px rgba(0,0,0,.2);
@@ -123,10 +121,8 @@ footer {
     position: absolute;
     background-color: black;
     top: 15%;
-    left: 65%;
     z-index:1002;
     overflow: auto;
-    width: 360px;
     border-radius: 4px;
     -moz-box-shadow: 0 0 5px 5px #888;
     -webkit-box-shadow: 0 0 5px 5px#888;

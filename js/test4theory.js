@@ -59,12 +59,14 @@ function getResources() {
                         });
 }
 
-function createGallery() {
+function createGallery(w,h) {
+        w = typeof(w) != 'undefined' ? w : "auto";
+        h = typeof(h) != 'undefined' ? h : "auto";
         // Activate the Galleria plugin
         Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
         $("#figures").galleria({
-                        width: 520,
-                        height: 440,
+                        width: w,
+                        height: h,
                         dataSource: figures,
                         preload: "all",
                         queue: false,
@@ -84,12 +86,34 @@ function createGallery() {
 }
 
 // Show the waiting div when JS is enabled
+function setWidth() {
+        aspect_ratio = ($(window).width()/$(window).height());
+        //w = (($(window).width() * 45) / 100);
+        h = (($(window).height() * 70) / 100);
+
+        // Figures width and height based on viewport
+        $("#figures").css('width', h + 30);
+        $("#figures").css('height', h);
+        
+        // Video tutorial width and height based on figures size 
+        w = (($(window).width() * 35) / 100);
+        h = w / 1.7;
+        $("#video-container").css('width', w);
+        $("#video-container").css('width', h);
+        
+        // Position for the video tutorial
+        p = $(window).width() - w + (w/3);
+        $("#video-container").css('left', p);
+
+}
+        setWidth();
+
 if (Modernizr.video.webm) {
         $("#noscript").hide();
         $("#waiting").show();
         getBoincData();
         getResources();
-        createGallery();
+        createGallery('auto','auto');
 }
 
 

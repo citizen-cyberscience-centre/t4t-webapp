@@ -57,6 +57,8 @@ function loaded() {
         }
 }
 
+
+
 function startTutorial() {
         $("#left-sidebar").animate({opacity:0},1);
         $("#main-content").animate({opacity:0},1);
