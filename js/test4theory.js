@@ -82,6 +82,7 @@ function createGallery(w,h) {
                         left: gallery.prev,
                         right: gallery.next,
                         up: gallery.openLightbox,
+                        down: gallery.closeLightbox
                         });   
 }
 
