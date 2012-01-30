@@ -17,6 +17,9 @@
 
 var pop = Popcorn("#video");
 
+// Enable preload
+pop.preload("auto");
+
 function addPopOvers() {
         $("#info").popover({
                 html: true,
@@ -41,22 +44,6 @@ function addPopOvers() {
                 });
 }
 
-var loaded = function() {
-        // store the returned timeRanges object as we use it more than once
-        var buff = pop.buffered();
-        
-        // if we have buffered more then half the video
-        if ( buff.length > 0 && buff.end(0) > ( pop.duration() / 2 ) ) {
-            pop.controls( true );
-            pop.play();
-            console.log( "LOADED" );
-        // if less then half the video has loaded call our function again
-        } else {
-            console.log( "Still Loading...." );
-            setTimeout( loaded, 10 );
-        }
-}
-
 function stopTutorial(){
         $("#left-sidebar").animate({opacity:1},100);
         $("#main-content").animate({opacity:1},100);
@@ -73,9 +60,6 @@ function stopTutorial(){
         
         pop.pause();
 }
-
-
-
 
 function startTutorial() {
         $("#left-sidebar").animate({opacity:0},1);
@@ -214,7 +198,8 @@ function startTutorial() {
          });
 
 
-        loaded();
+        pop.controls(true);
+        pop.play();
 
         $().popover({trigger: 'hover'});
 

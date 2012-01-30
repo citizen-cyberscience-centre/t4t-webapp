@@ -22,6 +22,7 @@
                 <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
                 <!-- Google Web Fonts -->
                 <link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+
         </head>
         <body>
            <div class="container-fluid">
@@ -114,13 +115,9 @@
                     </div>
                     <a id="exit" href="javascript:onclick = stopTutorial();" class="btn">Exit video tutorial</a>
             </div>
-                <script type="text/javascript" src="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/master/js/tutorial.js"></script>
-                <script type="text/javascript" src="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/master/js/test4theory.js"></script>
-                <script> if (typeof getBoincData == 'undefined') {
-                    console.log('Raw Github failed, falling back to local copy');
-                    document.write('<script type="text/javascript" src="js/tutorial.js"><\/script>');
-                    document.write('<script type="text/javascript" src="js/test4theory.js"><\/script>');
-                        }
-                </script>
+
+            <!-- Test4theory JS -->
+            <script type="text/javascript" src="js/tutorial.js"></script>
+            <script type="text/javascript" src="js/test4theory.js"></script>
         </body>
 </html>
