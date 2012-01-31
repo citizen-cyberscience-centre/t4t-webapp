@@ -1,123 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <title>Test4Theory</title>
-
-                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-                <!-- Galleria -->
-                <script src="js/galleria/galleria-1.2.6.min.js"></script>
-
-                <!-- Modernizr -->
-                <script src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
-
-                <!-- Popover -->
-                <script src="js/bootstrap-twipsy.js" type="text/javascript"></script>
-                <script src="js/bootstrap-popover.js" type="text/javascript"></script>
-
-                <!-- Popcorn.js -->
-                <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
-
-                <!-- CSS -->
-                <link rel="stylesheet" href="css/bootstrap.min.css">
-                <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
-                <!-- Google Web Fonts -->
-                <link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
-
-        </head>
-        <body>
-           <div class="container-fluid">
-                <div class="row">
-<a href="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
-                    <div id="header" class="span16">
-                        Test4Theory simulations
-                    </div>
-                </div>
-                <div id="noscript" class="row">
-                    <div id="noscript" class="span16">
-                        <h1>WARNING: Test4Theory web application makes heavy use of JavaScript, HTML5 and CSS3</h1>
-                        <p>This site uses JavaScript, HTML5 and CSS3 to show the results and your BOINC credit using technologies like JavaScript, JSON and HTML5.</p>
-                        <p>If you cannot enable JavaScript in your browser's settings or your browser does not support HTML5 and/or CSS3, you will be missing a friendly user interface to the results:</p>
-                        <ul>
-                            <li>an interactive gallery with all the figures from the simulations of your computer:
-                            <ul>
-                                <li>zoom in and out with a friendly interface,</li>
-                                <li>browse the figures (next,previous and index) using shortcuts and without going back and forward to see other image,</li>
-                                <li>swipe movement for flicking through images on touch devices,</li>
-                                <li>etc.</li>
-                            </ul></li>
-                            <li>and some BOINC statistics.</li>
-                        </ul>
-                        <p>Here you have an screenshot of the web page with a <strong>free, modern and open source</strong> web browser like <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/">Google Chrome</a>:</p>
-                        <div id="example-img">
-                            <img src="img/example.png"/>
-                        </div>
-                        <p>You can access the <a href="job/">raw figures and BOINC stats data</a> and the <a href="logs/">LOGs folder</a></p> 
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="waiting" class="span16">
-                            <h1>Waiting for some nice figures to show you.</h1>
-                            <h2>Please, reload again in a few minutes</h2>
-                            <h2>Meanwhile you can check the <a href="logs/">logs</a></h2>
-                    </div>
-                </div>
+  <head>
+    <title>Test4Theory</title>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <!-- Galleria -->
+    <script type="text/javascript" src="js/galleria/galleria-1.2.6.min.js"></script>
+    
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    
+    <!-- Popover -->
+    <script type="text/javascript" src="js/bootstrap-twipsy.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-popover.js" ></script>
+    
+    <!-- Popcorn.js -->
+    <script type="text/javascript" src="js/popcorn.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <!-- Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+  </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <a href="https://raw.github.com/citizen-cyberscience-centre/t4t-webapp/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+          <div id="header" class="span16">Test4Theory simulations</div>
+        </div>
+        <div id="noscript" class="row">
+          <div id="noscript" class="span16">
+            <h1>WARNING: Test4Theory web application makes heavy use of JavaScript, HTML5 and CSS3</h1>
+            <h3>This site uses JavaScript, HTML5 and CSS3 to show the results and your BOINC credit.</h3>
+            <p>If you cannot enable JavaScript in your browser's settings or your browser does not support HTML5 video and/or CSS3, you will be missing a friendly user interface to the results:</p>
+            <ul>
+              <li>an interactive gallery with all the figures from the simulations of your computer:
+              <ul>
+                <li>zoom in and out with a friendly interface,</li>
+                <li>browse the figures (next,previous and index) using shortcuts and without going back and forward to see other image,</li>
+                <li>swipe movement for flicking through images on touch devices,</li>
+                <li>etc.</li>
+              </ul></li>
+              <li>and some BOINC statistics.</li>
+            </ul>
+            <p>Here you have an screenshot of the web page with a <strong>free, modern and open source</strong> web browser like <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/">Google Chrome</a>:</p>
+            <div id="example-img">
+                <img src="img/example.png"/>
             </div>
-            <div id="with-js" class="container-fluid">
-                <div id="left-sidebar" class="sidebar">
-                    <div id="info"  title="Simulations information" data-content="This box shows information about the current simulations that your virtual machine is running out."></div><br/>
-                    <div id="boinc" title="BOINC statistics" data-content="This box shows your user BOINC statistics: credit, user name, etc."></div><br>
-                    <div id="logs"  title="LOGs" data-content="This box gives you direct access to all the LOGs of the Virtual Machine: Co-Pilot, booting process, experiments, etc."><a href=logs/>LOGs</a> <br></div>
-                </div>
-                <div id="main-content" class="content">
-                    <div id="centered">
-                        <div id="figures" title="Simulation Figures" data-content="This box shows you all the figures that have been generated by your virtual machine."></div>
-                    </div>
-                        <div id="shortcuts">
-                            <b>Keyboard shortcuts:</b> &nbsp;
-                            <b>&larr;</b> previous image &nbsp; 
-                            <b>&rarr;</b> next image &nbsp; 
-                            <b>&uarr;</b> zoom in &nbsp; 
-                            <b>&darr;</b> zoom out
-                            <br/>
-                            <a href="javascript:onclick = startTutorial();" id="help-button" class="btn primary large">Video tutorial</a>
-                        </div>
-                </div>
+            <hr>
+            <p><span class="label important">Note</span> You can access the <strong>raw figures and BOINC stats data from the experiments</strong> <a href="job/">here</a> as well as the <strong>LOGs of the virtual machine and experiments</strong> <a href="logs/">here</a>.</p> 
+            <hr>
+            <p><span class="label warning">Info</span> If you are using IE9 or IE10 you will be able to access the web application if you install <a href="https://tools.google.com/dlpage/webmmf">the open source codec WebM</a> from Google.</p>
+ 
+          </div> <!-- id="noscript" class="span16"-->
+        </div> <!-- id="noscript" class="row"-->
+        <div class="row">
+          <div id="waiting" class="span16">
+            <h1>Waiting for some nice figures to show you.</h1>
+            <h2>Please, reload again in a few minutes</h2>
+            <h2>Meanwhile you can check the <a href="logs/">logs</a></h2>
+          </div>
+        </div>
+      </div> <!-- class container-fluid -->
+        <div id="with-js" class="container-fluid">
+          <div id="left-sidebar" class="sidebar">
+            <div id="info"  title="Simulations information" data-content="This box shows information about the current simulations that your virtual machine is running out."></div><br/>
+            <div id="boinc" title="BOINC statistics" data-content="This box shows your user BOINC statistics: credit, user name, etc."></div><br>
+            <div id="logs"  title="LOGs" data-content="This box gives you direct access to all the LOGs of the Virtual Machine: Co-Pilot, booting process, experiments, etc."><a href=logs/>LOGs</a> <br></div>
+          </div> <!-- left-sidebar -->
+          <div id="main-content" class="content">
+            <div id="centered">
+              <div id="figures" title="Simulation Figures" data-content="This box shows you all the figures that have been generated by your virtual machine."></div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="github" class="span16">
-                            <p>Please, if you find a bug or you think that this application can be improved add an "issue" in the <a href="https://github.com/citizen-cyberscience-centre/t4t-webapp/issues">project repository</a>.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="span16">
-                        <footer>
-                        <a href="http://www.w3.org/html/logo/">
-                        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="155" height="51" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a>
-                        <a href="http://www.gnu.org/licenses/agpl.html"><img src="http://www.gnu.org/graphics/agplv3-155x51.png" alt="AGPL v3" title="License GNU Affero V3">
-                        </a>
-                        <p>&copy; <a href="http://cern.ch/cern-copyright">European Organization for Nuclear Research</a>, <abbr title="European Organization for Nuclear Research">CERN</abbr>, <time>2012</time></p> 
-                        <p>With the support of the <a href="http://www.citizencyberscience.net/">Citizen Cyberscience Centre</a> and the <a href="http://lpcc.web.cern.ch/LPCC/">LHC Physics Centre</a> at <abbr title="European Organization for Nuclear Research">CERN</abbr></p>
-                        </footer>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="shortcuts">
+              <b>Keyboard shortcuts:</b> &nbsp;
+              <b>&larr;</b> previous image &nbsp; 
+              <b>&rarr;</b> next image &nbsp; 
+              <b>&uarr;</b> zoom in &nbsp; 
+              <b>&darr;</b> zoom out
+              <br/>
+              <a href="javascript:onclick = startTutorial();" id="help-button" class="btn primary large">Video tutorial</a>
+            </div> <!-- shortcuts -->
+          </div> <!-- main-content -->
+        </div> <!-- with-js -->
+        <div class="container-fluid">
+          <div class="row">
+            <div id="github" class="span16">
+              <p>Please, if you find a bug or you think that this application can be improved add an "issue" in the <a href="https://github.com/citizen-cyberscience-centre/t4t-webapp/issues">project repository</a>.</p>
+            </div> <!-- github -->
+          </div> <!-- row -->
+        </div> <!-- container-fluid -->
 
-            <div id="tutorial">
-                    <div id="video-container">
-                        <video id="video">
-                        <source src="http://www.citizencyberscience.net/t4t-webapp/img/tutorial.webm" type="video/webm"></source>
-                        </video>
-                    </div>
-                    <a id="exit" href="javascript:onclick = stopTutorial();" class="btn">Exit video tutorial</a>
+        <div id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="span16">
+                <footer>
+                <a href="http://www.w3.org/html/logo/">
+                <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="155" height="51" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a>
+                <a href="http://www.gnu.org/licenses/agpl.html"><img src="http://www.gnu.org/graphics/agplv3-155x51.png" alt="AGPL v3" title="License GNU Affero V3">
+                </a>
+                <p>&copy; <a href="http://cern.ch/cern-copyright">European Organization for Nuclear Research</a>, <abbr title="European Organization for Nuclear Research">CERN</abbr>, <time>2012</time></p> 
+                <p>With the support of the <a href="http://www.citizencyberscience.net/">Citizen Cyberscience Centre</a> and the <a href="http://lpcc.web.cern.ch/LPCC/">LHC Physics Centre</a> at <abbr title="European Organization for Nuclear Research">CERN</abbr></p>
+                </footer>
+              </div>
             </div>
+          </div>
+        </div> <!-- footer -->
 
-            <!-- Test4theory JS -->
-            <script type="text/javascript" src="js/tutorial.js"></script>
-            <script type="text/javascript" src="js/test4theory.js"></script>
-        </body>
+        <div id="tutorial">
+          <div id="video-container">
+            <video id="video">
+            <source src="http://www.citizencyberscience.net/t4t-webapp/img/tutorial.webm" type="video/webm"></source>
+            </video>
+          </div>
+          <a id="exit" href="javascript:onclick = stopTutorial();" class="btn">Exit video tutorial</a>
+        </div>
+
+        <!-- Test4theory JS -->
+        <script type="text/javascript" src="js/tutorial.js"></script>
+        <script type="text/javascript" src="js/test4theory.js"></script>
+    </body>
 </html>
