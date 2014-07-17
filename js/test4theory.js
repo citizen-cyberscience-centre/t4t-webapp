@@ -122,5 +122,8 @@ if (Modernizr.video.webm) {
         getResources();
         createGallery('auto','auto');
 }
+else {
+    $("#tutorial").hide();
+}
 
 
