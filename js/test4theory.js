@@ -115,15 +115,14 @@ function setWidth() {
 }
         setWidth();
 
+$("#waiting").show();
+getBoincData();
+getResources();
+createGallery('auto','auto');
+
 if (Modernizr.video.webm) {
-        $("#noscript").hide();
-        $("#waiting").show();
-        getBoincData();
-        getResources();
-        createGallery('auto','auto');
+	$("#tutorialbtn").show();
 }
 else {
-    $("#tutorial").hide();
+	//$("#noscript").show();
 }
-
-
